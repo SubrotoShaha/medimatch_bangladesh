@@ -151,17 +151,17 @@ export default function SymptomInput({ onSearch, initialQuery = '' }) {
         </div>
 
         {/* Action Bar */}
-        <div className="flex items-center justify-between px-4 py-3 bg-slate-50 border-t border-slate-100">
-          <span className="text-xs text-slate-400">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0 px-4 py-3.5 bg-slate-50 border-t border-slate-100">
+          <span className="text-xs text-slate-400 text-center sm:text-left">
             {selectedSymptoms.length} symptom{selectedSymptoms.length !== 1 ? 's' : ''} selected
           </span>
           <button
             onClick={handleSearch}
             disabled={selectedSymptoms.length === 0 || loading}
-            className="btn-primary text-sm disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none"
+            className="btn-primary w-full sm:w-auto text-sm justify-center disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none"
           >
             {loading ? (
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 justify-center">
                 <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 Analyzing...
               </span>

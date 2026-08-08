@@ -74,13 +74,13 @@ export default function StatsSection() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
               <div
                 key={index}
-                className="relative bg-white rounded-2xl p-7 border border-slate-100 card-hover shadow-premium text-center overflow-hidden group"
+                className="relative bg-white rounded-2xl p-6 sm:p-7 border border-slate-100 card-hover shadow-premium text-center overflow-hidden group"
               >
                 {/* Top accent bar */}
                 <div className={`absolute top-0 inset-x-0 h-1 bg-gradient-to-r ${stat.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl`} />

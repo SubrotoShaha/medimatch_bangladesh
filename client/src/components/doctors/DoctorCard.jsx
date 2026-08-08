@@ -112,7 +112,7 @@ export default function DoctorCard({ doctor }) {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2">
             <Link
               to={`/doctors/${doctor._id}`}
               className="flex-1 text-center py-2.5 text-sm font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors"

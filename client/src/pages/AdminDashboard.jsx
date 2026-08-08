@@ -73,7 +73,7 @@ export default function AdminDashboard() {
 
         {/* Stats Tab */}
         {activeTab === 'stats' && stats && (
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
               { label: 'Total Users', val: stats.totalUsers, icon: Users, color: 'text-blue-600 bg-blue-50' },
               { label: 'Doctors', val: stats.totalDoctors, icon: Stethoscope, color: 'text-teal-600 bg-teal-50' },

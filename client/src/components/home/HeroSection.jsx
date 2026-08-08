@@ -124,7 +124,7 @@ export default function HeroSection() {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl sm:text-6xl lg:text-[4.25rem] font-extrabold text-white leading-[1.1] tracking-tight mb-7 animate-slide-up">
+        <h1 className="text-4xl sm:text-6xl lg:text-[4.25rem] font-extrabold text-white leading-[1.1] tracking-tight mb-7 animate-slide-up">
           Find the Right Doctor
           <br />
           <span className="relative inline-block mt-1">
@@ -138,7 +138,7 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p
-          className="text-lg sm:text-xl text-slate-300/80 max-w-2xl mx-auto mb-12 animate-slide-up leading-relaxed"
+          className="text-lg sm:text-xl text-slate-300/80 max-w-2xl mx-auto mb-12 animate-slide-up leading-relaxed px-4 sm:px-0"
           style={{ animationDelay: '0.1s' }}
         >
           Enter your symptoms or disease and our intelligent system will recommend the right
@@ -148,27 +148,29 @@ export default function HeroSection() {
         {/* Search Bar with Autocomplete */}
         <div
           ref={wrapperRef}
-          className="max-w-2xl mx-auto relative z-50 animate-slide-up"
+          className="max-w-2xl mx-auto relative z-50 animate-slide-up px-2 sm:px-0"
           style={{ animationDelay: '0.2s' }}
         >
           <form onSubmit={handleSearch} className="relative group">
             {/* Outer glow */}
             <div className="absolute -inset-[2px] bg-gradient-to-r from-blue-500 via-teal-400 to-blue-500 rounded-2xl blur-lg opacity-30 group-focus-within:opacity-55 transition-opacity duration-500" />
             {/* Search box */}
-            <div className="relative flex items-center bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
-              <Search className="w-5 h-5 text-slate-400 ml-5 shrink-0" />
-              <input
-                type="text"
-                value={searchInput}
-                onChange={(e) => setSearchInput(e.target.value)}
-                onFocus={() => searchInput.trim().length >= 1 && setShowSuggestions(true)}
-                placeholder="Type a symptom or disease (e.g. fever, dengue, asthma, chest pain)..."
-                className="flex-1 px-4 py-5 text-base text-slate-800 placeholder:text-slate-400 outline-none bg-transparent"
-                id="hero-symptom-search"
-              />
+            <div className="relative flex flex-col sm:flex-row sm:items-center bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 p-2 sm:p-0">
+              <div className="flex items-center flex-1 w-full min-w-0 py-3 sm:py-5 pl-3 sm:pl-5">
+                <Search className="w-5 h-5 text-slate-400 shrink-0" />
+                <input
+                  type="text"
+                  value={searchInput}
+                  onChange={(e) => setSearchInput(e.target.value)}
+                  onFocus={() => searchInput.trim().length >= 1 && setShowSuggestions(true)}
+                  placeholder="Type a symptom or disease (e.g. fever, headache, chest pain)..."
+                  className="w-full px-3 text-base text-slate-800 placeholder:text-slate-400 outline-none bg-transparent"
+                  id="hero-symptom-search"
+                />
+              </div>
               <button
                 type="submit"
-                className="btn-primary mr-2 px-6 py-3 text-sm shrink-0"
+                className="btn-primary w-full sm:w-auto sm:mr-2 px-6 py-3.5 text-sm shrink-0 justify-center"
               >
                 Check Symptoms
                 <ArrowRight className="w-4 h-4" />
