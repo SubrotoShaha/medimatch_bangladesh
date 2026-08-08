@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 
 /**
- * Main Navigation Bar — professional medical theme with official DocBD logo
+ * Main Navigation Bar — professional medical theme with official MediMatch Bangladesh logo
  */
 export default function Navbar() {
   const { isAuthenticated, user, logout } = useAuth();

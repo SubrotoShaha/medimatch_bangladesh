@@ -42,7 +42,7 @@ const DEMO_ACCOUNTS = [
 
 /**
  * Login Form component with email/password fields
- * Includes one-click demo login for university presentation
+ * Includes one-click demo login for MediMatch Bangladesh university presentation
  */
 export default function LoginForm() {
   const { login } = useAuth();

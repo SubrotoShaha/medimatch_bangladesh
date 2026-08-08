@@ -12,7 +12,7 @@ import App from './App.jsx'
 
 // ─── Developer Branding ──────────────────────────────────────
 console.log(
-  '%c🏥 DocBD — Symptom-Based Doctor Recommendation System',
+  '%c🏥 MediMatch Bangladesh — Symptom-Based Doctor Recommendation System',
   'color: #2563eb; font-size: 14px; font-weight: bold;'
 );
 console.log(

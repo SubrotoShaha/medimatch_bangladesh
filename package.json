@@ -1,7 +1,7 @@
 {
   "name": "docbd-project",
   "version": "1.0.0",
-  "description": "DocBD - Symptom-Based Doctor Recommendation System for Bangladesh",
+  "description": "MediMatch Bangladesh - Symptom-Based Doctor Recommendation System for Bangladesh",
   "main": "index.js",
   "scripts": {
     "dev:server": "npm run dev --prefix server",

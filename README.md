@@ -1,6 +1,6 @@
-# DocBD — Symptom-Based Doctor Recommendation System
+# MediMatch Bangladesh — Symptom-Based Doctor Recommendation System
 
-DocBD is a comprehensive healthcare web application tailored for Bangladesh. It allows patients to input their symptoms, matches them with the right medical specializations using a smart algorithm, and recommends available doctors. Patients can then book appointments directly through the platform.
+MediMatch Bangladesh is a comprehensive healthcare web application tailored for Bangladesh. It allows patients to input their symptoms, matches them with the right medical specializations using a smart algorithm, and recommends available doctors. Patients can then book appointments directly through the platform.
 
 ## 🚀 Features
 
@@ -18,7 +18,7 @@ DocBD is a comprehensive healthcare web application tailored for Bangladesh. It 
 This project uses a standard Client-Server monorepo structure:
 
 ```
-DocBD/
+MediMatch Bangladesh/
 ├── client/           # Frontend: React + Vite + Tailwind CSS
 ├── server/           # Backend: Node.js + Express + MongoDB
 ├── package.json      # Workspace root package (concurrent scripts)

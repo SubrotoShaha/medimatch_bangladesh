@@ -120,7 +120,7 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-slate-600">
-              © {new Date().getFullYear()} DocBD. All rights reserved.
+              © {new Date().getFullYear()} MediMatch Bangladesh. All rights reserved.
             </p>
             <p className="text-xs text-slate-600 text-center max-w-md">
               ⚕️ Disclaimer: This platform provides recommendations only. Always consult a qualified medical professional for diagnosis and treatment.

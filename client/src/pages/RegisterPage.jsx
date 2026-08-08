@@ -23,10 +23,10 @@ export default function RegisterPage() {
             />
             <div className="relative">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 p-2 shadow-lg ring-4 ring-white/20">
-                <img src="/favicon.svg" alt="DocBD Logo" className="w-full h-full object-contain" />
+                <img src="/favicon.svg" alt="MediMatch Bangladesh Logo" className="w-full h-full object-contain" />
               </div>
               <h1 className="text-2xl font-extrabold text-white mb-1.5">Create Account</h1>
-              <p className="text-teal-100 text-sm font-medium">Join DocBD as a Patient or Doctor</p>
+              <p className="text-teal-100 text-sm font-medium">Join MediMatch Bangladesh as a Patient or Doctor</p>
             </div>
           </div>
 

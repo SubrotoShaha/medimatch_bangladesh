@@ -38,10 +38,10 @@ app.use('/api/admin', require('./routes/admin'));
 
 // ─── Health Check ────────────────────────────────────────────
 app.get('/', (req, res) => {
-  res.json({ status: 'ok', message: 'DocBD Backend Server is Live' });
+  res.json({ status: 'ok', message: 'MediMatch Bangladesh Backend Server is Live' });
 });
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'DocBD API is running' });
+  res.json({ status: 'ok', message: 'MediMatch Bangladesh API is running' });
 });
 
 // ─── 404 Handler ─────────────────────────────────────────────
@@ -62,7 +62,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log('\n══════════════════════════════════════════════════');
-  console.log('  🏥 DocBD — Symptom-Based Doctor Recommendation');
+  console.log('  🏥 MediMatch Bangladesh — Symptom-Based Doctor Recommendation');
   console.log('  👨‍💻 Developed by Subroto Kumar Shaha');
   console.log('  🎓 Student of CSE | Steps With SP');
   console.log('══════════════════════════════════════════════════');
