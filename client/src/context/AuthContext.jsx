@@ -22,8 +22,8 @@ export function AuthProvider({ children }) {
 
   // ─── Load auth state from localStorage on mount ──────────
   useEffect(() => {
-    const savedToken = localStorage.getItem('docbd_token');
-    const savedUser = localStorage.getItem('docbd_user');
+    const savedToken = localStorage.getItem('medimatchbd_token');
+    const savedUser = localStorage.getItem('medimatchbd_user');
 
     if (savedToken && savedUser) {
       try {
@@ -36,12 +36,12 @@ export function AuthProvider({ children }) {
           setUser(JSON.parse(savedUser));
         } else {
           // Token expired — clear storage
-          localStorage.removeItem('docbd_token');
-          localStorage.removeItem('docbd_user');
+          localStorage.removeItem('medimatchbd_token');
+          localStorage.removeItem('medimatchbd_user');
         }
       } catch {
-        localStorage.removeItem('docbd_token');
-        localStorage.removeItem('docbd_user');
+        localStorage.removeItem('medimatchbd_token');
+        localStorage.removeItem('medimatchbd_user');
       }
     }
     setLoading(false);
@@ -52,8 +52,8 @@ export function AuthProvider({ children }) {
     const { data } = await api.post('/auth/login', { email, password });
     setToken(data.token);
     setUser(data.user);
-    localStorage.setItem('docbd_token', data.token);
-    localStorage.setItem('docbd_user', JSON.stringify(data.user));
+    localStorage.setItem('medimatchbd_token', data.token);
+    localStorage.setItem('medimatchbd_user', JSON.stringify(data.user));
     return data;
   };
 
@@ -62,8 +62,8 @@ export function AuthProvider({ children }) {
     const { data } = await api.post('/auth/register', { name, email, password, role });
     setToken(data.token);
     setUser(data.user);
-    localStorage.setItem('docbd_token', data.token);
-    localStorage.setItem('docbd_user', JSON.stringify(data.user));
+    localStorage.setItem('medimatchbd_token', data.token);
+    localStorage.setItem('medimatchbd_user', JSON.stringify(data.user));
     return data;
   };
 
@@ -71,8 +71,8 @@ export function AuthProvider({ children }) {
   const logout = () => {
     setToken(null);
     setUser(null);
-    localStorage.removeItem('docbd_token');
-    localStorage.removeItem('docbd_user');
+    localStorage.removeItem('medimatchbd_token');
+    localStorage.removeItem('medimatchbd_user');
   };
 
   const value = {

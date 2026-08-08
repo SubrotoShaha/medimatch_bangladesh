@@ -1,5 +1,5 @@
 {
-  "name": "docbd-project",
+  "name": "medimatchbd-project",
   "version": "1.0.0",
   "description": "MediMatch Bangladesh - Symptom-Based Doctor Recommendation System for Bangladesh",
   "main": "index.js",

@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 const DEMO_ACCOUNTS = [
   {
     label: 'Patient',
-    email: 'patient@docbd.com',
+    email: 'patient@medimatchbd.com',
     password: 'patient123',
     icon: UserIcon,
     color: 'from-blue-500 to-blue-600',
@@ -20,7 +20,7 @@ const DEMO_ACCOUNTS = [
   },
   {
     label: 'Doctor',
-    email: 'dr.aminul@docbd.com',
+    email: 'dr.aminul@medimatchbd.com',
     password: 'doctor123',
     icon: Stethoscope,
     color: 'from-teal-500 to-teal-600',
@@ -30,7 +30,7 @@ const DEMO_ACCOUNTS = [
   },
   {
     label: 'Admin',
-    email: 'admin@docbd.com',
+    email: 'admin@medimatchbd.com',
     password: 'admin123',
     icon: Shield,
     color: 'from-indigo-500 to-indigo-600',

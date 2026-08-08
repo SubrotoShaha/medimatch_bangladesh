@@ -132,171 +132,171 @@ const specializationsData = [
   {
     specialization: 'General Medicine',
     doctors: [
-      { name: 'Dr. Rahman Chowdhury', email: 'dr.rahman@docbd.com', location: 'Chittagong', fee: 800, rating: 4.8, bio: 'Senior Consultant in Internal Medicine with 14 years experience at Chittagong Medical College.' },
-      { name: 'Dr. Alamgir Hossain', email: 'dr.alamgir@docbd.com', location: 'Dhaka', fee: 1000, rating: 4.7, bio: 'Internal medicine specialist with expertise in chronic disease management and preventive care.' },
-      { name: 'Dr. Shahana Parveen', email: 'dr.shahana@docbd.com', location: 'Sylhet', fee: 900, rating: 4.6, bio: 'Experienced General Practitioner focusing on adult medicine and infectious diseases.' },
-      { name: 'Dr. Mizanur Rahman', email: 'dr.mizanur@docbd.com', location: 'Rajshahi', fee: 750, rating: 4.5, bio: 'General physician with 10 years experience treating complex multi-system ailments.' },
-      { name: 'Dr. Jesmin Akter', email: 'dr.jesmin@docbd.com', location: 'Dhaka', fee: 1100, rating: 4.9, bio: 'Senior Consultant at Square Hospital specializing in internal medicine and fever management.' },
+      { name: 'Dr. Rahman Chowdhury', email: 'dr.rahman@medimatchbd.com', location: 'Chittagong', fee: 800, rating: 4.8, bio: 'Senior Consultant in Internal Medicine with 14 years experience at Chittagong Medical College.' },
+      { name: 'Dr. Alamgir Hossain', email: 'dr.alamgir@medimatchbd.com', location: 'Dhaka', fee: 1000, rating: 4.7, bio: 'Internal medicine specialist with expertise in chronic disease management and preventive care.' },
+      { name: 'Dr. Shahana Parveen', email: 'dr.shahana@medimatchbd.com', location: 'Sylhet', fee: 900, rating: 4.6, bio: 'Experienced General Practitioner focusing on adult medicine and infectious diseases.' },
+      { name: 'Dr. Mizanur Rahman', email: 'dr.mizanur@medimatchbd.com', location: 'Rajshahi', fee: 750, rating: 4.5, bio: 'General physician with 10 years experience treating complex multi-system ailments.' },
+      { name: 'Dr. Jesmin Akter', email: 'dr.jesmin@medimatchbd.com', location: 'Dhaka', fee: 1100, rating: 4.9, bio: 'Senior Consultant at Square Hospital specializing in internal medicine and fever management.' },
     ]
   },
   {
     specialization: 'Cardiology',
     doctors: [
-      { name: 'Dr. Aminul Islam', email: 'dr.aminul@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Experienced cardiologist at National Heart Foundation specializing in interventional cardiology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Hasan-Faruque-Bhuiyan.jpg' },
-      { name: 'Dr. Sajjad Hossain', email: 'dr.sajjad@docbd.com', location: 'Chittagong', fee: 1400, rating: 4.8, bio: 'Consultant Cardiologist specializing in echocardiography and hypertension management.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
-      { name: 'Dr. Nazmul Huda', email: 'dr.nazmul@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.7, bio: 'Expert in heart failure, arrhythmia treatment, and coronary interventions at United Hospital.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ishteak-Ahmed-Oneek.jpg' },
-      { name: 'Dr. Farzana Haque', email: 'dr.farzana@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Cardiologist with specialized training in preventive cardiology and lipidology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Tanvir Ahmed', email: 'dr.tanvir@docbd.com', location: 'Rajshahi', fee: 1300, rating: 4.8, bio: 'Clinical Cardiologist with 12 years of practice at Rajshahi Heart Centre.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
+      { name: 'Dr. Aminul Islam', email: 'dr.aminul@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Experienced cardiologist at National Heart Foundation specializing in interventional cardiology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Hasan-Faruque-Bhuiyan.jpg' },
+      { name: 'Dr. Sajjad Hossain', email: 'dr.sajjad@medimatchbd.com', location: 'Chittagong', fee: 1400, rating: 4.8, bio: 'Consultant Cardiologist specializing in echocardiography and hypertension management.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
+      { name: 'Dr. Nazmul Huda', email: 'dr.nazmul@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.7, bio: 'Expert in heart failure, arrhythmia treatment, and coronary interventions at United Hospital.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ishteak-Ahmed-Oneek.jpg' },
+      { name: 'Dr. Farzana Haque', email: 'dr.farzana@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Cardiologist with specialized training in preventive cardiology and lipidology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Tanvir Ahmed', email: 'dr.tanvir@medimatchbd.com', location: 'Rajshahi', fee: 1300, rating: 4.8, bio: 'Clinical Cardiologist with 12 years of practice at Rajshahi Heart Centre.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
     ]
   },
   {
     specialization: 'Dermatology',
     doctors: [
-      { name: 'Dr. Fatema Begum', email: 'dr.fatema@docbd.com', location: 'Dhaka', fee: 1200, rating: 4.8, bio: 'Board-certified dermatologist specializing in skin allergies, eczema, and cosmetic dermatology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2020/08/Prof.-Dr.-Md.-Rashidul-Hasan.jpg' },
-      { name: 'Dr. Kazi Nahid', email: 'dr.kazi@docbd.com', location: 'Chittagong', fee: 1000, rating: 4.6, bio: 'Expert in acne treatment, psoriasis management, and pediatric dermatology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
-      { name: 'Dr. Mehedi Hasan', email: 'dr.mehedi@docbd.com', location: 'Dhaka', fee: 1300, rating: 4.9, bio: 'Senior Dermatologist specializing in laser surgery, skin cancer screening, and hair loss.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
-      { name: 'Dr. Rumana Chowdhury', email: 'dr.rumana@docbd.com', location: 'Sylhet', fee: 1100, rating: 4.7, bio: 'Consultant Dermatologist focusing on autoimmune skin conditions and aesthetic dermatology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Zarin Subah', email: 'dr.zarin@docbd.com', location: 'Khulna', fee: 900, rating: 4.5, bio: 'Dermatologist with 8 years of clinical experience treating fungal infections and allergies.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
+      { name: 'Dr. Fatema Begum', email: 'dr.fatema@medimatchbd.com', location: 'Dhaka', fee: 1200, rating: 4.8, bio: 'Board-certified dermatologist specializing in skin allergies, eczema, and cosmetic dermatology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2020/08/Prof.-Dr.-Md.-Rashidul-Hasan.jpg' },
+      { name: 'Dr. Kazi Nahid', email: 'dr.kazi@medimatchbd.com', location: 'Chittagong', fee: 1000, rating: 4.6, bio: 'Expert in acne treatment, psoriasis management, and pediatric dermatology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Mehedi Hasan', email: 'dr.mehedi@medimatchbd.com', location: 'Dhaka', fee: 1300, rating: 4.9, bio: 'Senior Dermatologist specializing in laser surgery, skin cancer screening, and hair loss.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
+      { name: 'Dr. Rumana Chowdhury', email: 'dr.rumana@medimatchbd.com', location: 'Sylhet', fee: 1100, rating: 4.7, bio: 'Consultant Dermatologist focusing on autoimmune skin conditions and aesthetic dermatology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Zarin Subah', email: 'dr.zarin@medimatchbd.com', location: 'Khulna', fee: 900, rating: 4.5, bio: 'Dermatologist with 8 years of clinical experience treating fungal infections and allergies.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
     ]
   },
   {
     specialization: 'Orthopedics',
     doctors: [
-      { name: 'Dr. Rafiq Ahmed', email: 'dr.rafiq@docbd.com', location: 'Dhaka', fee: 1800, rating: 4.9, bio: 'Orthopedic surgeon specializing in joint replacement and sports injuries trained at BSMMU.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shrikantha-Karmaker.jpg' },
-      { name: 'Dr. Golam Kibria', email: 'dr.golam@docbd.com', location: 'Chittagong', fee: 1500, rating: 4.7, bio: 'Spine specialist and orthopedic trauma surgeon at Chittagong Medical College Hospital.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Atiqure-Rahman-Rimel.jpg' },
-      { name: 'Dr. Jahangir Alam', email: 'dr.jahangir@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Arthroscopy specialist focusing on knee and shoulder ligament reconstruction.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
-      { name: 'Dr. Saiful Islam', email: 'dr.saiful@docbd.com', location: 'Sylhet', fee: 1300, rating: 4.6, bio: 'Consultant Orthopedic Surgeon with 10 years experience in bone fracture repair.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
-      { name: 'Dr. Taskin Ahmed', email: 'dr.taskin@docbd.com', location: 'Rajshahi', fee: 1200, rating: 4.5, bio: 'Expert in pediatric orthopedics, joint pain management, and arthritis surgery.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ariful-Islam.jpg' },
+      { name: 'Dr. Rafiq Ahmed', email: 'dr.rafiq@medimatchbd.com', location: 'Dhaka', fee: 1800, rating: 4.9, bio: 'Orthopedic surgeon specializing in joint replacement and sports injuries trained at BSMMU.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shrikantha-Karmaker.jpg' },
+      { name: 'Dr. Golam Kibria', email: 'dr.golam@medimatchbd.com', location: 'Chittagong', fee: 1500, rating: 4.7, bio: 'Spine specialist and orthopedic trauma surgeon at Chittagong Medical College Hospital.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Atiqure-Rahman-Rimel.jpg' },
+      { name: 'Dr. Jahangir Alam', email: 'dr.jahangir@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Arthroscopy specialist focusing on knee and shoulder ligament reconstruction.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
+      { name: 'Dr. Saiful Islam', email: 'dr.saiful@medimatchbd.com', location: 'Sylhet', fee: 1300, rating: 4.6, bio: 'Consultant Orthopedic Surgeon with 10 years experience in bone fracture repair.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
+      { name: 'Dr. Taskin Ahmed', email: 'dr.taskin@medimatchbd.com', location: 'Rajshahi', fee: 1200, rating: 4.5, bio: 'Expert in pediatric orthopedics, joint pain management, and arthritis surgery.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ariful-Islam.jpg' },
     ]
   },
   {
     specialization: 'Neurology',
     doctors: [
-      { name: 'Dr. Kamal Hossain', email: 'dr.kamal@docbd.com', location: 'Dhaka', fee: 2000, rating: 4.9, bio: 'Neurologist specializing in epilepsy, stroke, and headache disorders. Former chief at BIRDEM.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Mohammad-Shafiqul-Islam.jpg' },
-      { name: 'Dr. Syed Ali', email: 'dr.syed@docbd.com', location: 'Chittagong', fee: 1700, rating: 4.7, bio: 'Expert in movement disorders, Parkinson\'s disease, and peripheral neuropathy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Atiqure-Rahman-Rimel.jpg' },
-      { name: 'Dr. Anowar Hossain', email: 'dr.anowar@docbd.com', location: 'Dhaka', fee: 1800, rating: 4.8, bio: 'Senior Consultant Neurologist specializing in neuro-intensive care and stroke prevention.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
-      { name: 'Dr. Rehana Parvin', email: 'dr.rehana@docbd.com', location: 'Sylhet', fee: 1500, rating: 4.6, bio: 'Consultant Neurologist focusing on migraine management, dementia, and nerve conduction studies.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Mahfuzur Rahman', email: 'dr.mahfuzur@docbd.com', location: 'Khulna', fee: 1400, rating: 4.5, bio: 'Clinical Neurologist with expertise in seizure disorders and neuromuscular diseases.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
+      { name: 'Dr. Kamal Hossain', email: 'dr.kamal@medimatchbd.com', location: 'Dhaka', fee: 2000, rating: 4.9, bio: 'Neurologist specializing in epilepsy, stroke, and headache disorders. Former chief at BIRDEM.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Mohammad-Shafiqul-Islam.jpg' },
+      { name: 'Dr. Syed Ali', email: 'dr.syed@medimatchbd.com', location: 'Chittagong', fee: 1700, rating: 4.7, bio: 'Expert in movement disorders, Parkinson\'s disease, and peripheral neuropathy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Atiqure-Rahman-Rimel.jpg' },
+      { name: 'Dr. Anowar Hossain', email: 'dr.anowar@medimatchbd.com', location: 'Dhaka', fee: 1800, rating: 4.8, bio: 'Senior Consultant Neurologist specializing in neuro-intensive care and stroke prevention.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
+      { name: 'Dr. Rehana Parvin', email: 'dr.rehana@medimatchbd.com', location: 'Sylhet', fee: 1500, rating: 4.6, bio: 'Consultant Neurologist focusing on migraine management, dementia, and nerve conduction studies.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Mahfuzur Rahman', email: 'dr.mahfuzur@medimatchbd.com', location: 'Khulna', fee: 1400, rating: 4.5, bio: 'Clinical Neurologist with expertise in seizure disorders and neuromuscular diseases.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
     ]
   },
   {
     specialization: 'Gastroenterology',
     doctors: [
-      { name: 'Dr. Habibur Rahman', email: 'dr.habib@docbd.com', location: 'Khulna', fee: 1100, rating: 4.6, bio: 'Gastroenterologist with expertise in endoscopy and liver diseases at Khulna Medical College.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Tasmir-Arefin.jpg' },
-      { name: 'Dr. Towhidul Islam', email: 'dr.towhidul@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.9, bio: 'Senior Gastroenterologist specializing in IBS, peptic ulcer disease, and therapeutic endoscopy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
-      { name: 'Dr. Salma Khatun', email: 'dr.salma@docbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Hepatologist specializing in fatty liver disease, hepatitis, and GI disorders.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Zakir Hossain', email: 'dr.zakir@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Expert in inflammatory bowel disease (IBD) and colonoscopy interventions at Labaid.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
-      { name: 'Dr. Afroza Begum', email: 'dr.afroza@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.5, bio: 'Gastroenterology specialist focusing on acidity, GERD, and gall bladder conditions.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Habibur Rahman', email: 'dr.habib@medimatchbd.com', location: 'Khulna', fee: 1100, rating: 4.6, bio: 'Gastroenterologist with expertise in endoscopy and liver diseases at Khulna Medical College.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Tasmir-Arefin.jpg' },
+      { name: 'Dr. Towhidul Islam', email: 'dr.towhidul@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.9, bio: 'Senior Gastroenterologist specializing in IBS, peptic ulcer disease, and therapeutic endoscopy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
+      { name: 'Dr. Salma Khatun', email: 'dr.salma@medimatchbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Hepatologist specializing in fatty liver disease, hepatitis, and GI disorders.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Zakir Hossain', email: 'dr.zakir@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Expert in inflammatory bowel disease (IBD) and colonoscopy interventions at Labaid.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
+      { name: 'Dr. Afroza Begum', email: 'dr.afroza@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.5, bio: 'Gastroenterology specialist focusing on acidity, GERD, and gall bladder conditions.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
     ]
   },
   {
     specialization: 'ENT',
     doctors: [
-      { name: 'Dr. Mahmuda Akter', email: 'dr.mahmuda@docbd.com', location: 'Comilla', fee: 1000, rating: 4.7, bio: 'ENT specialist treating sinus, throat, and ear disorders. Previously worked at Apollo Hospitals.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Prof.-Brig.-Gen-Dr.-Md.-Bashir-Ahmed.jpg' },
-      { name: 'Dr. Delwar Hossain', email: 'dr.delwar@docbd.com', location: 'Dhaka', fee: 1400, rating: 4.9, bio: 'Senior Otolaryngologist specializing in endoscopic sinus surgery and hearing loss.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
-      { name: 'Dr. Suraiya Begum', email: 'dr.suraiya@docbd.com', location: 'Chittagong', fee: 1100, rating: 4.6, bio: 'Consultant ENT Surgeon specializing in tonsillectomy, vertigo, and throat pathologies.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Ariful Islam', email: 'dr.ariful@docbd.com', location: 'Dhaka', fee: 1300, rating: 4.8, bio: 'Expert in micro-ear surgery and vocal cord disorders at BSMMU.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ariful-Islam.jpg' },
-      { name: 'Dr. Humayun Kabir', email: 'dr.humayun@docbd.com', location: 'Sylhet', fee: 1000, rating: 4.5, bio: 'ENT surgeon with 9 years experience in allergic rhinitis and snoring disorders.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
+      { name: 'Dr. Mahmuda Akter', email: 'dr.mahmuda@medimatchbd.com', location: 'Comilla', fee: 1000, rating: 4.7, bio: 'ENT specialist treating sinus, throat, and ear disorders. Previously worked at Apollo Hospitals.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Prof.-Brig.-Gen-Dr.-Md.-Bashir-Ahmed.jpg' },
+      { name: 'Dr. Delwar Hossain', email: 'dr.delwar@medimatchbd.com', location: 'Dhaka', fee: 1400, rating: 4.9, bio: 'Senior Otolaryngologist specializing in endoscopic sinus surgery and hearing loss.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
+      { name: 'Dr. Suraiya Begum', email: 'dr.suraiya@medimatchbd.com', location: 'Chittagong', fee: 1100, rating: 4.6, bio: 'Consultant ENT Surgeon specializing in tonsillectomy, vertigo, and throat pathologies.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Ariful Islam', email: 'dr.ariful@medimatchbd.com', location: 'Dhaka', fee: 1300, rating: 4.8, bio: 'Expert in micro-ear surgery and vocal cord disorders at BSMMU.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ariful-Islam.jpg' },
+      { name: 'Dr. Humayun Kabir', email: 'dr.humayun@medimatchbd.com', location: 'Sylhet', fee: 1000, rating: 4.5, bio: 'ENT surgeon with 9 years experience in allergic rhinitis and snoring disorders.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
     ]
   },
   {
     specialization: 'Ophthalmology',
     doctors: [
-      { name: 'Dr. Sharmin Jahan', email: 'dr.sharmin@docbd.com', location: 'Sylhet', fee: 1000, rating: 4.6, bio: 'Eye specialist with expertise in cataract surgery and glaucoma treatment at Ispahani Islamia.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Mosharraf Hossain', email: 'dr.mosharraf@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Senior Vitreoretinal Surgeon specializing in diabetic retinopathy and LASIK vision correction.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
-      { name: 'Dr. Reshma Parveen', email: 'dr.reshma@docbd.com', location: 'Chittagong', fee: 1200, rating: 4.7, bio: 'Consultant Ophthalmologist specializing in pediatric eye care and squint surgery.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
-      { name: 'Dr. Faisal Ahmed', email: 'dr.faisal@docbd.com', location: 'Dhaka', fee: 1400, rating: 4.8, bio: 'Cornea and Refractive surgery specialist at National Institute of Ophthalmology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Mohammad-Shafiqul-Islam.jpg' },
-      { name: 'Dr. Dilruba Khanom', email: 'dr.dilruba@docbd.com', location: 'Rajshahi', fee: 950, rating: 4.5, bio: 'Ophthalmologist specializing in dry eye syndrome, glaucoma, and prescription optics.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2020/08/Prof.-Dr.-Md.-Rashidul-Hasan.jpg' },
+      { name: 'Dr. Sharmin Jahan', email: 'dr.sharmin@medimatchbd.com', location: 'Sylhet', fee: 1000, rating: 4.6, bio: 'Eye specialist with expertise in cataract surgery and glaucoma treatment at Ispahani Islamia.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Mosharraf Hossain', email: 'dr.mosharraf@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Senior Vitreoretinal Surgeon specializing in diabetic retinopathy and LASIK vision correction.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
+      { name: 'Dr. Reshma Parveen', email: 'dr.reshma@medimatchbd.com', location: 'Chittagong', fee: 1200, rating: 4.7, bio: 'Consultant Ophthalmologist specializing in pediatric eye care and squint surgery.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Faisal Ahmed', email: 'dr.faisal@medimatchbd.com', location: 'Dhaka', fee: 1400, rating: 4.8, bio: 'Cornea and Refractive surgery specialist at National Institute of Ophthalmology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Mohammad-Shafiqul-Islam.jpg' },
+      { name: 'Dr. Dilruba Khanom', email: 'dr.dilruba@medimatchbd.com', location: 'Rajshahi', fee: 950, rating: 4.5, bio: 'Ophthalmologist specializing in dry eye syndrome, glaucoma, and prescription optics.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2020/08/Prof.-Dr.-Md.-Rashidul-Hasan.jpg' },
     ]
   },
   {
     specialization: 'Psychiatry',
     doctors: [
-      { name: 'Dr. Tahmina Rahman', email: 'dr.tahmina@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Psychiatrist focusing on anxiety, depression, and cognitive behavioral therapy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
-      { name: 'Dr. Imran Khan', email: 'dr.imran@docbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Psychiatrist specializing in bipolar disorder, OCD, and stress management.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
-      { name: 'Dr. Nigar Sultana', email: 'dr.nigar@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Child and Adolescent Psychiatrist specializing in ADHD, autism, and behavioral therapy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Firoz Ahmed', email: 'dr.firoz@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Psychiatrist with expertise in sleep disorders, PTSD, and psychopharmacology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Julfikar-Saif.jpg' },
-      { name: 'Dr. Sadia Afroze', email: 'dr.sadia@docbd.com', location: 'Khulna', fee: 1100, rating: 4.5, bio: 'Clinical Psychiatrist advocating mental health wellness, panic disorder treatment.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Tahmina Rahman', email: 'dr.tahmina@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Psychiatrist focusing on anxiety, depression, and cognitive behavioral therapy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Kabir-Hasan-Parvez.jpg' },
+      { name: 'Dr. Imran Khan', email: 'dr.imran@medimatchbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Psychiatrist specializing in bipolar disorder, OCD, and stress management.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
+      { name: 'Dr. Nigar Sultana', email: 'dr.nigar@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Child and Adolescent Psychiatrist specializing in ADHD, autism, and behavioral therapy.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Firoz Ahmed', email: 'dr.firoz@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Psychiatrist with expertise in sleep disorders, PTSD, and psychopharmacology.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Julfikar-Saif.jpg' },
+      { name: 'Dr. Sadia Afroze', email: 'dr.sadia@medimatchbd.com', location: 'Khulna', fee: 1100, rating: 4.5, bio: 'Clinical Psychiatrist advocating mental health wellness, panic disorder treatment.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
     ]
   },
   {
     specialization: 'Gynecology',
     doctors: [
-      { name: 'Dr. Nasrin Akter', email: 'dr.nasrin@docbd.com', location: 'Sylhet', fee: 1000, rating: 4.8, bio: 'Expert in women\'s health, prenatal care, and gynecological surgery at MAG Osmani.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Sultana Razia', email: 'dr.sultana@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.9, bio: 'Senior Consultant Obstetrician specializing in high-risk pregnancy and laparoscopic surgery.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
-      { name: 'Dr. Laila Arjumand', email: 'dr.laila@docbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Gynecologist specializing in PCOS management, infertility, and menopause care.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Nusrat Jahan', email: 'dr.nusrat@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Specialist in reproductive endocrinology and IVF at Square Hospital.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
-      { name: 'Dr. Shamima Nasrin', email: 'dr.shamima@docbd.com', location: 'Rajshahi', fee: 1100, rating: 4.6, bio: 'Gynecologist with 11 years experience in prenatal care, fibroid treatment, and deliveries.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Nasrin Akter', email: 'dr.nasrin@medimatchbd.com', location: 'Sylhet', fee: 1000, rating: 4.8, bio: 'Expert in women\'s health, prenatal care, and gynecological surgery at MAG Osmani.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Sultana Razia', email: 'dr.sultana@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.9, bio: 'Senior Consultant Obstetrician specializing in high-risk pregnancy and laparoscopic surgery.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Laila Arjumand', email: 'dr.laila@medimatchbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Gynecologist specializing in PCOS management, infertility, and menopause care.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Nusrat Jahan', email: 'dr.nusrat@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Specialist in reproductive endocrinology and IVF at Square Hospital.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Shamima Nasrin', email: 'dr.shamima@medimatchbd.com', location: 'Rajshahi', fee: 1100, rating: 4.6, bio: 'Gynecologist with 11 years experience in prenatal care, fibroid treatment, and deliveries.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
     ]
   },
   {
     specialization: 'Urology',
     doctors: [
-      { name: 'Dr. Kabir Hossain', email: 'dr.kabir@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Senior Urologist specializing in kidney stone laser surgery and prostate diseases.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
-      { name: 'Dr. Shafiqul Islam', email: 'dr.shafiqul@docbd.com', location: 'Chittagong', fee: 1400, rating: 4.7, bio: 'Consultant Urologist specializing in reconstructive urology and urinary tract infections.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ariful-Islam.jpg' },
-      { name: 'Dr. Rashedul Hasan', email: 'dr.rashedul@docbd.com', location: 'Dhaka', fee: 1700, rating: 4.9, bio: 'Expert in urological oncology, male infertility, and endourology at BSMMU.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
-      { name: 'Dr. Sabrina Akter', email: 'dr.sabrina.urology@docbd.com', location: 'Sylhet', fee: 1300, rating: 4.6, bio: 'Female Urologist specializing in incontinence, bladder issues, and pelvic floor disorders.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Jahangir Kabir', email: 'dr.jahangir.k@docbd.com', location: 'Khulna', fee: 1200, rating: 4.5, bio: 'Clinical Urologist with 9 years experience in laparoscopic urological procedures.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
+      { name: 'Dr. Kabir Hossain', email: 'dr.kabir@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Senior Urologist specializing in kidney stone laser surgery and prostate diseases.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
+      { name: 'Dr. Shafiqul Islam', email: 'dr.shafiqul@medimatchbd.com', location: 'Chittagong', fee: 1400, rating: 4.7, bio: 'Consultant Urologist specializing in reconstructive urology and urinary tract infections.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ariful-Islam.jpg' },
+      { name: 'Dr. Rashedul Hasan', email: 'dr.rashedul@medimatchbd.com', location: 'Dhaka', fee: 1700, rating: 4.9, bio: 'Expert in urological oncology, male infertility, and endourology at BSMMU.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
+      { name: 'Dr. Sabrina Akter', email: 'dr.sabrina.urology@medimatchbd.com', location: 'Sylhet', fee: 1300, rating: 4.6, bio: 'Female Urologist specializing in incontinence, bladder issues, and pelvic floor disorders.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Jahangir Kabir', email: 'dr.jahangir.k@medimatchbd.com', location: 'Khulna', fee: 1200, rating: 4.5, bio: 'Clinical Urologist with 9 years experience in laparoscopic urological procedures.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Toufiqe-E-Ealahi.jpg' },
     ]
   },
   {
     specialization: 'Pediatrics',
     doctors: [
-      { name: 'Dr. Sufia Khatun', email: 'dr.sufia@docbd.com', location: 'Rajshahi', fee: 700, rating: 4.6, bio: 'Pediatrician specializing in neonatal care and child growth & development.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Abu Sayed', email: 'dr.sayed@docbd.com', location: 'Dhaka', fee: 1400, rating: 4.9, bio: 'Senior Consultant Pediatrician specializing in pediatric respiratory diseases and nutrition.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
-      { name: 'Dr. Kaniz Fatima', email: 'dr.kaniz@docbd.com', location: 'Chittagong', fee: 1100, rating: 4.7, bio: 'Pediatric specialist focusing on childhood allergies, vaccination, and infectious diseases.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
-      { name: 'Dr. Mostafa Kamal', email: 'dr.mostafa@docbd.com', location: 'Dhaka', fee: 1300, rating: 4.8, bio: 'Pediatric Cardiologist focusing on congenital heart defects and child emergency care.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ishteak-Ahmed-Oneek.jpg' },
-      { name: 'Dr. Sharmin Akter', email: 'dr.sharmin.peds@docbd.com', location: 'Sylhet', fee: 900, rating: 4.5, bio: 'Consultant Pediatrician with 8 years experience in infant nutrition and fevers.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Sufia Khatun', email: 'dr.sufia@medimatchbd.com', location: 'Rajshahi', fee: 700, rating: 4.6, bio: 'Pediatrician specializing in neonatal care and child growth & development.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Abu Sayed', email: 'dr.sayed@medimatchbd.com', location: 'Dhaka', fee: 1400, rating: 4.9, bio: 'Senior Consultant Pediatrician specializing in pediatric respiratory diseases and nutrition.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
+      { name: 'Dr. Kaniz Fatima', email: 'dr.kaniz@medimatchbd.com', location: 'Chittagong', fee: 1100, rating: 4.7, bio: 'Pediatric specialist focusing on childhood allergies, vaccination, and infectious diseases.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Mostafa Kamal', email: 'dr.mostafa@medimatchbd.com', location: 'Dhaka', fee: 1300, rating: 4.8, bio: 'Pediatric Cardiologist focusing on congenital heart defects and child emergency care.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Md.-Ishteak-Ahmed-Oneek.jpg' },
+      { name: 'Dr. Sharmin Akter', email: 'dr.sharmin.peds@medimatchbd.com', location: 'Sylhet', fee: 900, rating: 4.5, bio: 'Consultant Pediatrician with 8 years experience in infant nutrition and fevers.', photo: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
     ]
   },
   {
     specialization: 'Pulmonology',
     doctors: [
-      { name: 'Dr. Anisur Rahman', email: 'dr.anisur@docbd.com', location: 'Dhaka', fee: 1300, rating: 4.8, bio: 'Pulmonologist specializing in asthma, COPD, and respiratory infections at NIDCH.' },
-      { name: 'Dr. Gazi Abdul Haq', email: 'dr.gazi@docbd.com', location: 'Chittagong', fee: 1400, rating: 4.7, bio: 'Senior Chest Specialist focusing on tuberculosis, pneumonia, and sleep apnea.' },
-      { name: 'Dr. Sabrina Ferdous', email: 'dr.sabrina.chest@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Consultant Pulmonologist specializing in interstitial lung disease and bronchoscopy.' },
-      { name: 'Dr. Mahmudul Hasan', email: 'dr.mahmudul@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Chest Physician with 10 years experience treating chronic cough and asthma.' },
-      { name: 'Dr. Faruq Hossain', email: 'dr.faruq@docbd.com', location: 'Rajshahi', fee: 1100, rating: 4.5, bio: 'Pulmonology specialist focusing on allergic airway diseases and smoking cessation.' },
+      { name: 'Dr. Anisur Rahman', email: 'dr.anisur@medimatchbd.com', location: 'Dhaka', fee: 1300, rating: 4.8, bio: 'Pulmonologist specializing in asthma, COPD, and respiratory infections at NIDCH.' },
+      { name: 'Dr. Gazi Abdul Haq', email: 'dr.gazi@medimatchbd.com', location: 'Chittagong', fee: 1400, rating: 4.7, bio: 'Senior Chest Specialist focusing on tuberculosis, pneumonia, and sleep apnea.' },
+      { name: 'Dr. Sabrina Ferdous', email: 'dr.sabrina.chest@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.9, bio: 'Consultant Pulmonologist specializing in interstitial lung disease and bronchoscopy.' },
+      { name: 'Dr. Mahmudul Hasan', email: 'dr.mahmudul@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Chest Physician with 10 years experience treating chronic cough and asthma.' },
+      { name: 'Dr. Faruq Hossain', email: 'dr.faruq@medimatchbd.com', location: 'Rajshahi', fee: 1100, rating: 4.5, bio: 'Pulmonology specialist focusing on allergic airway diseases and smoking cessation.' },
     ]
   },
   {
     specialization: 'Endocrinology',
     doctors: [
-      { name: 'Dr. Farhana Yasmin', email: 'dr.farhana@docbd.com', location: 'Dhaka', fee: 1400, rating: 4.9, bio: 'Expert in diabetes management and thyroid disorders. Senior consultant at Square Hospital.' },
-      { name: 'Dr. Motiur Rahman', email: 'dr.motiur@docbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Endocrinologist specializing in metabolic syndrome and adrenal disorders.' },
-      { name: 'Dr. Roksana Begum', email: 'dr.roksana@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Senior Endocrinologist at BIRDEM focusing on gestational diabetes and osteoporosis.' },
-      { name: 'Dr. Kamrul Hasan', email: 'dr.kamrul@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Diabetologist and Endocrinologist specializing in insulin therapy and obesity care.' },
-      { name: 'Dr. Nazia Hassan', email: 'dr.nazia@docbd.com', location: 'Khulna', fee: 1100, rating: 4.5, bio: 'Endocrinology specialist focusing on pituitary gland conditions and hormone disorders.' },
+      { name: 'Dr. Farhana Yasmin', email: 'dr.farhana@medimatchbd.com', location: 'Dhaka', fee: 1400, rating: 4.9, bio: 'Expert in diabetes management and thyroid disorders. Senior consultant at Square Hospital.' },
+      { name: 'Dr. Motiur Rahman', email: 'dr.motiur@medimatchbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant Endocrinologist specializing in metabolic syndrome and adrenal disorders.' },
+      { name: 'Dr. Roksana Begum', email: 'dr.roksana@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Senior Endocrinologist at BIRDEM focusing on gestational diabetes and osteoporosis.' },
+      { name: 'Dr. Kamrul Hasan', email: 'dr.kamrul@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Diabetologist and Endocrinologist specializing in insulin therapy and obesity care.' },
+      { name: 'Dr. Nazia Hassan', email: 'dr.nazia@medimatchbd.com', location: 'Khulna', fee: 1100, rating: 4.5, bio: 'Endocrinology specialist focusing on pituitary gland conditions and hormone disorders.' },
     ]
   },
   {
     specialization: 'Infectious Disease',
     doctors: [
-      { name: 'Dr. Tariqul Islam', email: 'dr.tariqul@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.9, bio: 'Specialist in viral & bacterial infections (COVID-19, Dengue, TB). Associate Professor at ICDDR,B.' },
-      { name: 'Dr. Muniruzzaman', email: 'dr.munir@docbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant in Tropical Medicine and Dengue/Typhoid fever management.' },
-      { name: 'Dr. Rubaiyat Ferdous', email: 'dr.rubaiyat@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Senior Infectious Disease Specialist focusing on antimicrobial resistance and HIV/viral care.' },
-      { name: 'Dr. Asif Iqbal', email: 'dr.asif@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Epidemiologist and Infectious Disease Physician specializing in seasonal epidemic fevers.' },
-      { name: 'Dr. Sanjida Khan', email: 'dr.sanjida@docbd.com', location: 'Rajshahi', fee: 1100, rating: 4.5, bio: 'Specialist in fungal infections, post-viral complications, and travel medicine.' },
+      { name: 'Dr. Tariqul Islam', email: 'dr.tariqul@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.9, bio: 'Specialist in viral & bacterial infections (COVID-19, Dengue, TB). Associate Professor at ICDDR,B.' },
+      { name: 'Dr. Muniruzzaman', email: 'dr.munir@medimatchbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Consultant in Tropical Medicine and Dengue/Typhoid fever management.' },
+      { name: 'Dr. Rubaiyat Ferdous', email: 'dr.rubaiyat@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Senior Infectious Disease Specialist focusing on antimicrobial resistance and HIV/viral care.' },
+      { name: 'Dr. Asif Iqbal', email: 'dr.asif@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Epidemiologist and Infectious Disease Physician specializing in seasonal epidemic fevers.' },
+      { name: 'Dr. Sanjida Khan', email: 'dr.sanjida@medimatchbd.com', location: 'Rajshahi', fee: 1100, rating: 4.5, bio: 'Specialist in fungal infections, post-viral complications, and travel medicine.' },
     ]
   },
   {
     specialization: 'Rheumatology',
     doctors: [
-      { name: 'Dr. Shireen Akhter', email: 'dr.shireen@docbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Rheumatologist specializing in arthritis, lupus, and autoimmune disorders.' },
-      { name: 'Dr. Enamul Hoque', email: 'dr.enamul@docbd.com', location: 'Dhaka', fee: 1700, rating: 4.9, bio: 'Senior Rheumatology Consultant specializing in rheumatoid arthritis, gout, and ankylosing spondylitis.' },
-      { name: 'Dr. Sharmeen Ahmed', email: 'dr.sharmeen@docbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Expert in pediatric rheumatology and systemic lupus erythematosus (SLE).' },
-      { name: 'Dr. Obaidul Islam', email: 'dr.obaidul@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Consultant Rheumatologist with expertise in joint pain, osteoporosis, and vasculitis.' },
-      { name: 'Dr. Tamanna Yeasmin', email: 'dr.tamanna@docbd.com', location: 'Rajshahi', fee: 1100, rating: 4.5, bio: 'Rheumatology physician focusing on fibromyalgia, soft tissue rheumatism, and osteoarthritis.' },
+      { name: 'Dr. Shireen Akhter', email: 'dr.shireen@medimatchbd.com', location: 'Chittagong', fee: 1300, rating: 4.7, bio: 'Rheumatologist specializing in arthritis, lupus, and autoimmune disorders.' },
+      { name: 'Dr. Enamul Hoque', email: 'dr.enamul@medimatchbd.com', location: 'Dhaka', fee: 1700, rating: 4.9, bio: 'Senior Rheumatology Consultant specializing in rheumatoid arthritis, gout, and ankylosing spondylitis.' },
+      { name: 'Dr. Sharmeen Ahmed', email: 'dr.sharmeen@medimatchbd.com', location: 'Dhaka', fee: 1500, rating: 4.8, bio: 'Expert in pediatric rheumatology and systemic lupus erythematosus (SLE).' },
+      { name: 'Dr. Obaidul Islam', email: 'dr.obaidul@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.6, bio: 'Consultant Rheumatologist with expertise in joint pain, osteoporosis, and vasculitis.' },
+      { name: 'Dr. Tamanna Yeasmin', email: 'dr.tamanna@medimatchbd.com', location: 'Rajshahi', fee: 1100, rating: 4.5, bio: 'Rheumatology physician focusing on fibromyalgia, soft tissue rheumatism, and osteoarthritis.' },
     ]
   },
   {
     specialization: 'Nephrology',
     doctors: [
-      { name: 'Dr. Hasan Mahmud', email: 'dr.hasan@docbd.com', location: 'Sylhet', fee: 1200, rating: 4.8, bio: 'Nephrologist specializing in chronic kidney disease and dialysis management.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
-      { name: 'Dr. Sirajul Islam', email: 'dr.sirajul@docbd.com', location: 'Dhaka', fee: 1800, rating: 4.9, bio: 'Senior Kidney Specialist and Transplant Nephrologist at National Institute of Kidney Diseases.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
-      { name: 'Dr. Bilkis Nahar', email: 'dr.bilkis@docbd.com', location: 'Chittagong', fee: 1400, rating: 4.7, bio: 'Consultant Nephrologist specializing in diabetic nephropathy and hypertension.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
-      { name: 'Dr. Monirul Haque', email: 'dr.monirul@docbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Expert in acute kidney injury, hemodialysis, and glomerulonephritis.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
-      { name: 'Dr. Fahmida Sultana', email: 'dr.fahmida@docbd.com', location: 'Khulna', fee: 1100, rating: 4.5, bio: 'Nephrologist focusing on electrolyte disorders, proteinuria, and renal disease prevention.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
+      { name: 'Dr. Hasan Mahmud', email: 'dr.hasan@medimatchbd.com', location: 'Sylhet', fee: 1200, rating: 4.8, bio: 'Nephrologist specializing in chronic kidney disease and dialysis management.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Tannita-Das.jpg' },
+      { name: 'Dr. Sirajul Islam', email: 'dr.sirajul@medimatchbd.com', location: 'Dhaka', fee: 1800, rating: 4.9, bio: 'Senior Kidney Specialist and Transplant Nephrologist at National Institute of Kidney Diseases.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-M.-Reazul-Alam.jpg' },
+      { name: 'Dr. Bilkis Nahar', email: 'dr.bilkis@medimatchbd.com', location: 'Chittagong', fee: 1400, rating: 4.7, bio: 'Consultant Nephrologist specializing in diabetic nephropathy and hypertension.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Fatima-Farhana.jpg' },
+      { name: 'Dr. Monirul Haque', email: 'dr.monirul@medimatchbd.com', location: 'Dhaka', fee: 1600, rating: 4.8, bio: 'Expert in acute kidney injury, hemodialysis, and glomerulonephritis.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Shovon-Rahut.jpg' },
+      { name: 'Dr. Fahmida Sultana', email: 'dr.fahmida@medimatchbd.com', location: 'Khulna', fee: 1100, rating: 4.5, bio: 'Nephrologist focusing on electrolyte disorders, proteinuria, and renal disease prevention.', profilePhoto: 'https://www.doctorbangladesh.com/wp-content/uploads/2026/07/Dr.-Debabrata-Ghosh.jpg' },
     ]
   }
 ];
@@ -373,11 +373,11 @@ const seedDatabase = async () => {
     console.log('👤 Creating admin user...');
     const admin = await User.create({
       name: 'System Admin',
-      email: 'admin@docbd.com',
+      email: 'admin@medimatchbd.com',
       password: 'admin123',
       role: 'admin',
     });
-    console.log(`   ✅ Admin: admin@docbd.com / admin123`);
+    console.log(`   ✅ Admin: admin@medimatchbd.com / admin123`);
 
     // ─── Create Sample Doctors ─────────────────────────────
     console.log('🩺 Creating sample doctors...');
@@ -409,18 +409,18 @@ const seedDatabase = async () => {
     console.log('🧑 Creating sample patient...');
     await User.create({
       name: 'Rahim Uddin',
-      email: 'patient@docbd.com',
+      email: 'patient@medimatchbd.com',
       password: 'patient123',
       role: 'patient',
     });
-    console.log(`   ✅ Patient: patient@docbd.com / patient123`);
+    console.log(`   ✅ Patient: patient@medimatchbd.com / patient123`);
 
     console.log('\n🎉 Database seeded successfully!');
     console.log('─────────────────────────────────');
     console.log('Demo Accounts:');
-    console.log('  Admin:   admin@docbd.com   / admin123');
-    console.log('  Doctor:  dr.aminul@docbd.com / doctor123');
-    console.log('  Patient: patient@docbd.com / patient123');
+    console.log('  Admin:   admin@medimatchbd.com   / admin123');
+    console.log('  Doctor:  dr.aminul@medimatchbd.com / doctor123');
+    console.log('  Patient: patient@medimatchbd.com / patient123');
     console.log('─────────────────────────────────');
 
     process.exit(0);

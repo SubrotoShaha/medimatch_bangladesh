@@ -1,5 +1,5 @@
 {
-  "name": "docbd-server",
+  "name": "medimatchbd-server",
   "version": "1.0.0",
   "description": "Symptom-Based Doctor Recommendation System for Bangladesh - Backend API",
   "main": "src/server.js",

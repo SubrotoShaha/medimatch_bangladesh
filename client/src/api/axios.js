@@ -31,7 +31,7 @@ const api = axios.create({
 // ─── Request Interceptor: Attach JWT Token ───────────────────
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('docbd_token');
+    const token = localStorage.getItem('medimatchbd_token');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -45,8 +45,8 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('docbd_token');
-      localStorage.removeItem('docbd_user');
+      localStorage.removeItem('medimatchbd_token');
+      localStorage.removeItem('medimatchbd_user');
       // Only redirect if not already on login/register page
       if (!window.location.pathname.includes('/login') && !window.location.pathname.includes('/register')) {
         window.location.href = '/login';

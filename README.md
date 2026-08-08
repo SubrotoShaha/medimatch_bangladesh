@@ -50,7 +50,7 @@ Create `.env` files in both the `server` and `client` directories using `.env.ex
 **`server/.env`**:
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/docbd
+MONGO_URI=mongodb://localhost:27017/medimatchbd
 JWT_SECRET=your_jwt_secret_here
 JWT_EXPIRE=7d
 ```
@@ -77,9 +77,9 @@ npm run dev
 
 | Role | Email | Password |
 |------|-------|----------|
-| **Patient** | `patient@docbd.com` | `patient123` |
-| **Doctor** | `dr.aminul@docbd.com` | `doctor123` |
-| **Admin** | `admin@docbd.com` | `admin123` |
+| **Patient** | `patient@medimatchbd.com` | `patient123` |
+| **Doctor** | `dr.aminul@medimatchbd.com` | `doctor123` |
+| **Admin** | `admin@medimatchbd.com` | `admin123` |
 
 ## 👨‍💻 Author
 **Subroto Kumar Shaha** | Student of CSE
