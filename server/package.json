@@ -2,11 +2,11 @@
   "name": "docbd-server",
   "version": "1.0.0",
   "description": "Symptom-Based Doctor Recommendation System for Bangladesh - Backend API",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "seed": "node seed/seedData.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed/seedData.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

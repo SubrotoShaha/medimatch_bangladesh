@@ -10,7 +10,7 @@ const bcrypt = require('bcryptjs');
 const path = require('path');
 
 // Load env from parent directory
-dotenv.config({ path: path.join(__dirname, '..', '.env') });
+dotenv.config({ path: path.join(__dirname, '..', '..', '.env') });
 
 const User = require('../models/User');
 const DoctorProfile = require('../models/DoctorProfile');

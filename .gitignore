@@ -17,3 +17,10 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Portable Git (temp)
+mingit/
+MinGit.zip
+
+# Lock files
+package-lock.json

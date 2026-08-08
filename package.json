@@ -1,0 +1,26 @@
+{
+  "name": "docbd-project",
+  "version": "1.0.0",
+  "description": "DocBD - Symptom-Based Doctor Recommendation System for Bangladesh",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "install:all": "concurrently \"npm install\" \"npm install --prefix server\" \"npm install --prefix client\"",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "healthcare",
+    "bangladesh"
+  ],
+  "author": "Subroto Kumar Shaha",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
