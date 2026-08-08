@@ -13,10 +13,12 @@ import axios from 'axios';
  * - Response interceptor handles 401 (auto logout)
  */
 const getBaseUrl = () => {
-  const envUrl = import.meta.env.VITE_API_URL;
-  if (!envUrl) return 'http://127.0.0.1:5000/api';
-  const clean = envUrl.trim().replace(/\/+$/, '');
-  return clean.endsWith('/api') ? clean : `${clean}/api`;
+  // If running locally, connect to local backend
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    return 'http://127.0.0.1:5000/api';
+  }
+  // Otherwise, connect to the live production backend on Render
+  return 'https://medimatch-bangladesh.onrender.com/api';
 };
 
 const api = axios.create({
