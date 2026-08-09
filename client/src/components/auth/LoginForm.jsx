@@ -11,41 +11,38 @@ const DEMO_ACCOUNTS = [
   {
     label: 'Patient',
     email: 'patient@medimatchbd.com',
-    legacyEmail: 'patient@docbd.com',
     password: 'patient123',
     icon: UserIcon,
     color: 'from-blue-500 to-blue-600',
-    bgHover: 'hover:bg-blue-50 dark:hover:bg-blue-950/40',
-    border: 'border-blue-200 dark:border-blue-800/60',
-    text: 'text-blue-700 dark:text-blue-300',
+    bgHover: 'hover:bg-blue-50',
+    border: 'border-blue-200',
+    text: 'text-blue-700',
   },
   {
     label: 'Doctor',
     email: 'dr.aminul@medimatchbd.com',
-    legacyEmail: 'dr.aminul@docbd.com',
     password: 'doctor123',
     icon: Stethoscope,
     color: 'from-teal-500 to-teal-600',
-    bgHover: 'hover:bg-teal-50 dark:hover:bg-teal-950/40',
-    border: 'border-teal-200 dark:border-teal-800/60',
-    text: 'text-teal-700 dark:text-teal-300',
+    bgHover: 'hover:bg-teal-50',
+    border: 'border-teal-200',
+    text: 'text-teal-700',
   },
   {
     label: 'Admin',
     email: 'admin@medimatchbd.com',
-    legacyEmail: 'admin@docbd.com',
     password: 'admin123',
     icon: Shield,
     color: 'from-indigo-500 to-indigo-600',
-    bgHover: 'hover:bg-indigo-50 dark:hover:bg-indigo-950/40',
-    border: 'border-indigo-200 dark:border-indigo-800/60',
-    text: 'text-indigo-700 dark:text-indigo-300',
+    bgHover: 'hover:bg-indigo-50',
+    border: 'border-indigo-200',
+    text: 'text-indigo-700',
   },
 ];
 
 /**
  * Login Form component with email/password fields
- * Includes one-click demo login for MediMatch Bangladesh
+ * Includes one-click demo login for MediMatch Bangladesh university presentation
  */
 export default function LoginForm() {
   const { login } = useAuth();
@@ -71,6 +68,7 @@ export default function LoginForm() {
       const data = await login(formData.email, formData.password);
       toast.success(`Welcome back, ${data.user.name}!`);
 
+      // Redirect based on role
       const redirectPath = data.user.role === 'doctor'
         ? '/dashboard/doctor'
         : data.user.role === 'admin'
@@ -86,17 +84,8 @@ export default function LoginForm() {
 
   const handleDemoLogin = async (account) => {
     setDemoLoading(account.label);
-    setFormData({ email: account.email, password: account.password });
-
     try {
-      let data;
-      try {
-        data = await login(account.email, account.password);
-      } catch (firstErr) {
-        // Fallback to legacy seed email if DB was seeded before rename
-        data = await login(account.legacyEmail, account.password);
-      }
-
+      const data = await login(account.email, account.password);
       toast.success(`Welcome, ${data.user.name}! (Demo ${account.label})`);
 
       const redirectPath = data.user.role === 'doctor'
@@ -118,9 +107,9 @@ export default function LoginForm() {
       <div>
         <div className="flex items-center gap-2 mb-3">
           <Zap className="w-4 h-4 text-amber-500" />
-          <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Quick Demo Login</span>
+          <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Quick Demo Login</span>
         </div>
-        <div className="grid grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-3 gap-2">
           {DEMO_ACCOUNTS.map((account) => {
             const Icon = account.icon;
             const isLoading = demoLoading === account.label;
@@ -130,10 +119,10 @@ export default function LoginForm() {
                 type="button"
                 disabled={!!demoLoading}
                 onClick={() => handleDemoLogin(account)}
-                className={`group relative flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl border ${account.border} ${account.bgHover} transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed bg-white dark:bg-slate-800/80 cursor-pointer`}
+                className={`group relative flex flex-col items-center gap-1.5 px-3 py-3 rounded-xl border ${account.border} ${account.bgHover} transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed bg-white`}
               >
                 {isLoading ? (
-                  <div className="w-5 h-5 border-2 border-slate-200 border-t-blue-500 rounded-full animate-spin my-1.5" />
+                  <div className="w-5 h-5 border-2 border-slate-200 border-t-blue-500 rounded-full animate-spin" />
                 ) : (
                   <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${account.color} flex items-center justify-center shadow-sm`}>
                     <Icon className="w-4 h-4 text-white" />
@@ -148,18 +137,18 @@ export default function LoginForm() {
 
       {/* ── Divider ── */}
       <div className="flex items-center gap-3">
-        <div className="flex-1 h-px bg-slate-200 dark:bg-slate-800" />
-        <span className="text-xs font-medium text-slate-400 dark:text-slate-500">or sign in manually</span>
-        <div className="flex-1 h-px bg-slate-200 dark:bg-slate-800" />
+        <div className="flex-1 h-px bg-slate-200" />
+        <span className="text-xs font-medium text-slate-400">or sign in manually</span>
+        <div className="flex-1 h-px bg-slate-200" />
       </div>
 
       {/* ── Manual Login Form ── */}
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* Email */}
         <div>
-          <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Email Address</label>
+          <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email Address</label>
           <div className="relative">
-            <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 dark:text-slate-500 pointer-events-none z-10" />
+            <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none z-10" />
             <input
               type="email"
               name="email"
@@ -174,9 +163,9 @@ export default function LoginForm() {
 
         {/* Password */}
         <div>
-          <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Password</label>
+          <label className="block text-sm font-semibold text-slate-700 mb-1.5">Password</label>
           <div className="relative">
-            <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 dark:text-slate-500 pointer-events-none z-10" />
+            <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none z-10" />
             <input
               type={showPassword ? 'text' : 'password'}
               name="password"
@@ -189,7 +178,7 @@ export default function LoginForm() {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors z-10"
+              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors z-10"
             >
               {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
             </button>
@@ -216,9 +205,9 @@ export default function LoginForm() {
         </button>
 
         {/* Register Link */}
-        <p className="text-center text-sm text-slate-500 dark:text-slate-400">
+        <p className="text-center text-sm text-slate-500">
           Don't have an account?{' '}
-          <Link to="/register" className="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
+          <Link to="/register" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
             Create one
           </Link>
         </p>

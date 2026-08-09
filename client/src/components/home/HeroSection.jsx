@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import {
   Search, HeartPulse, Shield, Stethoscope,
   Activity, Brain, Bone, Eye, ArrowRight,
-  CheckCircle, Sparkles,
+  CheckCircle, Sparkles, Plus,
 } from 'lucide-react';
 import api from '../../api/axios';
 
@@ -13,7 +13,7 @@ const defaultQuickSymptoms = [
 ];
 
 /**
- * Hero Section — Premium hero with live autocomplete and human-first copy
+ * Hero Section — Premium professional medical design with live autocomplete
  */
 export default function HeroSection() {
   const [searchInput, setSearchInput] = useState('');
@@ -23,6 +23,7 @@ export default function HeroSection() {
   const wrapperRef = useRef(null);
   const navigate = useNavigate();
 
+  // Load symptoms for hero autocomplete
   useEffect(() => {
     const fetchSymptoms = async () => {
       try {
@@ -35,6 +36,7 @@ export default function HeroSection() {
     fetchSymptoms();
   }, []);
 
+  // Filter suggestions (word boundary matching)
   useEffect(() => {
     const query = searchInput.trim().toLowerCase();
     if (query.length >= 1) {
@@ -42,6 +44,7 @@ export default function HeroSection() {
         const words = s.toLowerCase().split(/\s+/);
         return words.some(w => w.startsWith(query));
       });
+
       filtered.sort((a, b) => {
         const aStarts = a.toLowerCase().startsWith(query);
         const bStarts = b.toLowerCase().startsWith(query);
@@ -57,6 +60,7 @@ export default function HeroSection() {
     }
   }, [searchInput, allSymptoms]);
 
+  // Click outside listener
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
@@ -83,73 +87,75 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-medical-gradient min-h-[90vh] flex items-center">
+    <section className="relative overflow-hidden bg-medical-gradient min-h-[88vh] flex items-center">
 
-      {/* Background glow layers */}
+      {/* Layered background glow */}
       <div className="absolute inset-0 bg-hero-pattern" />
 
-      {/* Decorative rings */}
+      {/* Decorative ring / grid lines */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] rounded-full border border-white/[0.05]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[850px] rounded-full border border-white/[0.03]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1060px] h-[1060px] rounded-full border border-white/[0.02]" />
+        {/* Large faint rings */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full border border-white/[0.04]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full border border-white/[0.03]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[1100px] rounded-full border border-white/[0.02]" />
 
-        {/* Floating icons */}
-        <HeartPulse className="absolute top-[14%] left-[7%] w-9 h-9 text-blue-300/25 animate-float" style={{ animationDelay: '0s' }} />
-        <Activity className="absolute top-[22%] right-[10%] w-10 h-10 text-teal-300/22 animate-float" style={{ animationDelay: '1.3s' }} />
-        <Brain className="absolute bottom-[28%] left-[13%] w-9 h-9 text-indigo-300/18 animate-float" style={{ animationDelay: '2.5s' }} />
-        <Bone className="absolute top-[48%] right-[7%] w-7 h-7 text-blue-200/15 animate-float" style={{ animationDelay: '0.9s' }} />
-        <Eye className="absolute bottom-[18%] right-[18%] w-8 h-8 text-teal-200/18 animate-float" style={{ animationDelay: '1.9s' }} />
-        <Stethoscope className="absolute top-[62%] left-[4%] w-10 h-10 text-blue-300/15 animate-float" style={{ animationDelay: '3.1s' }} />
+        {/* Floating medical icons */}
+        <HeartPulse className="absolute top-[14%] left-[7%]  w-9 h-9 text-blue-300/20 animate-float" style={{ animationDelay: '0s' }} />
+        <Activity    className="absolute top-[22%] right-[10%] w-10 h-10 text-teal-300/20 animate-float"  style={{ animationDelay: '1.2s' }} />
+        <Brain       className="absolute bottom-[28%] left-[13%] w-9 h-9 text-indigo-300/18 animate-float" style={{ animationDelay: '2.4s' }} />
+        <Bone        className="absolute top-[48%] right-[7%] w-7 h-7 text-blue-200/15 animate-float"    style={{ animationDelay: '0.8s' }} />
+        <Eye         className="absolute bottom-[18%] right-[18%] w-8 h-8 text-teal-200/18 animate-float" style={{ animationDelay: '1.8s' }} />
+        <Stethoscope className="absolute top-[62%] left-[4%] w-10 h-10 text-blue-300/15 animate-float"   style={{ animationDelay: '3s' }} />
 
-        {/* Glow blobs */}
-        <div className="absolute top-16 left-1/4 w-96 h-96 bg-blue-600/14 rounded-full blur-[80px]" />
-        <div className="absolute bottom-16 right-1/4 w-[28rem] h-[28rem] bg-teal-500/10 rounded-full blur-[80px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-72 h-72 bg-indigo-500/08 rounded-full blur-[60px]" />
+        {/* Soft glow blobs */}
+        <div className="absolute top-16 left-1/4 w-80 h-80 bg-blue-500/12 rounded-full blur-3xl" />
+        <div className="absolute bottom-16 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-64 h-64 bg-indigo-500/08 rounded-full blur-2xl" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
 
-        {/* Trust badge */}
-        <div className="inline-flex items-center gap-2.5 px-5 py-2.5 glass-navy rounded-full text-sm font-semibold text-blue-200 mb-10 animate-fade-in">
-          <Shield className="w-4 h-4 text-teal-400 shrink-0" />
-          Bangladesh's #1 Symptom-to-Doctor Platform
-          <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse-ring ml-0.5" />
+        {/* Trust Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 glass-navy rounded-full text-sm font-medium text-blue-200 mb-10 animate-fade-in">
+          <Shield className="w-4 h-4 text-teal-400" />
+          Trusted Healthcare Platform for Bangladesh
+          <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse-ring ml-1" />
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-4xl sm:text-[3.6rem] lg:text-[4.5rem] font-extrabold text-white leading-[1.08] tracking-tight mb-7 animate-slide-up">
-          Describe What's Wrong.
+        <h1 className="text-4xl sm:text-6xl lg:text-[4.25rem] font-extrabold text-white leading-[1.1] tracking-tight mb-7 animate-slide-up">
+          Find the Right Doctor
           <br />
-          <span className="relative inline-block mt-2">
-            <span className="text-gradient-hero">
-              We'll Find Your Doctor.
+          <span className="relative inline-block mt-1">
+            <span className="bg-gradient-to-r from-blue-300 via-teal-300 to-blue-300 bg-clip-text text-transparent animate-gradient">
+              Based on Your Symptoms
             </span>
-            <span className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400/50 to-transparent" />
+            {/* Underline accent */}
+            <span className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-400/60 to-transparent" />
           </span>
         </h1>
 
         {/* Subtitle */}
         <p
-          className="text-lg sm:text-xl text-slate-300/75 max-w-2xl mx-auto mb-12 animate-slide-up leading-relaxed px-4 sm:px-0"
-          style={{ animationDelay: '0.12s' }}
+          className="text-lg sm:text-xl text-slate-300/80 max-w-2xl mx-auto mb-12 animate-slide-up leading-relaxed px-4 sm:px-0"
+          style={{ animationDelay: '0.1s' }}
         >
-          No guesswork. No confusion. Just tell us how you're feeling and we'll
-          match you with the right specialist — fast, free, and accurate.
+          Enter your symptoms or disease and our intelligent system will recommend the right
+          medical specialist for you — across all major cities in Bangladesh.
         </p>
 
-        {/* Search bar */}
+        {/* Search Bar with Autocomplete */}
         <div
           ref={wrapperRef}
           className="max-w-2xl mx-auto relative z-50 animate-slide-up px-2 sm:px-0"
-          style={{ animationDelay: '0.22s' }}
+          style={{ animationDelay: '0.2s' }}
         >
           <form onSubmit={handleSearch} className="relative group">
-            {/* Glow ring */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-blue-500 via-teal-400 to-blue-500 rounded-2xl blur-xl opacity-25 group-focus-within:opacity-50 transition-opacity duration-500" />
-            {/* Box */}
-            <div className="relative flex flex-col sm:flex-row sm:items-center bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800 p-2 sm:p-0">
+            {/* Outer glow */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-blue-500 via-teal-400 to-blue-500 rounded-2xl blur-lg opacity-30 group-focus-within:opacity-55 transition-opacity duration-500" />
+            {/* Search box */}
+            <div className="relative flex flex-col sm:flex-row sm:items-center bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 p-2 sm:p-0">
               <div className="flex items-center flex-1 w-full min-w-0 py-3 sm:py-5 pl-3 sm:pl-5">
                 <Search className="w-5 h-5 text-slate-400 shrink-0" />
                 <input
@@ -157,8 +163,8 @@ export default function HeroSection() {
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                   onFocus={() => searchInput.trim().length >= 1 && setShowSuggestions(true)}
-                  placeholder="What symptom or condition are you experiencing?"
-                  className="w-full px-3 text-base text-slate-800 dark:text-slate-100 placeholder:text-slate-400 outline-none bg-transparent"
+                  placeholder="Type a symptom or disease (e.g. fever, headache, chest pain)..."
+                  className="w-full px-3 text-base text-slate-800 placeholder:text-slate-400 outline-none bg-transparent"
                   id="hero-symptom-search"
                 />
               </div>
@@ -166,26 +172,26 @@ export default function HeroSection() {
                 type="submit"
                 className="btn-primary w-full sm:w-auto sm:mr-2 px-6 py-3.5 text-sm shrink-0 justify-center"
               >
-                Find My Doctor
+                Check Symptoms
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </form>
 
-          {/* Autocomplete dropdown */}
+          {/* Floating Autocomplete Dropdown */}
           {showSuggestions && suggestions.length > 0 && (
-            <div className="absolute left-0 right-0 mt-2 bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden text-left z-[100] animate-slide-down">
-              <div className="px-4 py-2.5 bg-slate-50 dark:bg-slate-800/60 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                <span>Suggested Conditions</span>
+            <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden text-left z-[100] animate-slide-down">
+              <div className="px-4 py-2.5 bg-slate-50 border-b border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                <span>SUGGESTED SYMPTOMS & DISEASES</span>
                 <Sparkles className="w-3.5 h-3.5 text-blue-500" />
               </div>
               {suggestions.map((symptom) => (
                 <button
                   key={symptom}
                   onClick={() => selectSuggestion(symptom)}
-                  className="w-full flex items-center gap-3 px-5 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-blue-950/40 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-left border-b border-slate-100 dark:border-slate-800 last:border-0"
+                  className="w-full flex items-center gap-3 px-5 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors text-left border-b border-slate-100 last:border-0"
                 >
-                  <Search className="w-4 h-4 text-blue-400 shrink-0" />
+                  <Search className="w-4 h-4 text-blue-500 shrink-0" />
                   <span className="capitalize font-medium">{symptom}</span>
                 </button>
               ))}
@@ -193,14 +199,14 @@ export default function HeroSection() {
           )}
         </div>
 
-        {/* Quick symptom chips */}
-        <div className="mt-7 flex flex-wrap justify-center gap-2 relative z-10 animate-slide-up" style={{ animationDelay: '0.32s' }}>
-          <span className="text-xs text-slate-400/80 self-center mr-1 font-medium">People often search for:</span>
+        {/* Quick chips */}
+        <div className="mt-6 flex flex-wrap justify-center gap-2 relative z-10 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <span className="text-xs text-slate-400 self-center mr-1">Popular:</span>
           {defaultQuickSymptoms.map((symptom) => (
             <button
               key={symptom}
               onClick={() => navigate(`/symptoms?q=${encodeURIComponent(symptom.toLowerCase())}`)}
-              className="px-3.5 py-1.5 text-xs font-semibold text-blue-200 glass-navy hover:bg-white/12 rounded-full border border-white/12 transition-all duration-200 hover:scale-105 hover:border-teal-400/40 hover:text-teal-200 cursor-pointer"
+              className="px-3.5 py-1.5 text-xs font-medium text-blue-200 glass-navy hover:bg-white/15 rounded-full border border-white/15 transition-all hover:scale-105 hover:border-teal-400/40 cursor-pointer"
             >
               {symptom}
             </button>
@@ -208,13 +214,13 @@ export default function HeroSection() {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 relative z-10 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-6 relative z-10 animate-fade-in" style={{ animationDelay: '0.5s' }}>
           {[
-            'No registration needed to browse',
-            'Always free for patients',
-            'Verified & licensed doctors only',
+            'No Registration Required to Browse',
+            'Free Symptom Analysis',
+            'Verified Doctors Only',
           ].map((item) => (
-            <div key={item} className="flex items-center gap-2 text-sm text-slate-300/65">
+            <div key={item} className="flex items-center gap-2 text-sm text-slate-300/70">
               <CheckCircle className="w-4 h-4 text-teal-400 shrink-0" />
               {item}
             </div>
