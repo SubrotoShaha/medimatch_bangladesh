@@ -84,8 +84,19 @@ export default function LoginForm() {
 
   const handleDemoLogin = async (account) => {
     setDemoLoading(account.label);
+    setFormData({ email: account.email, password: account.password });
+
     try {
-      const data = await login(account.email, account.password);
+      let data;
+      try {
+        data = await login(account.email, account.password);
+      } catch (firstErr) {
+        // Fallback to legacy seed email if DB was seeded prior to domain rename
+        const legacyEmail = account.email.replace('@medimatchbd.com', '@docbd.com');
+        setFormData({ email: legacyEmail, password: account.password });
+        data = await login(legacyEmail, account.password);
+      }
+
       toast.success(`Welcome, ${data.user.name}! (Demo ${account.label})`);
 
       const redirectPath = data.user.role === 'doctor'
