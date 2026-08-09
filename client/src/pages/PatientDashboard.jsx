@@ -71,10 +71,10 @@ export default function PatientDashboard() {
     {
       label: 'Completed',
       val: appointments.filter(a => a.status === 'completed').length,
-      color: 'text-emerald-600 dark:text-emerald-400',
-      bg: 'bg-emerald-50 dark:bg-emerald-950/30',
-      border: 'border-emerald-100 dark:border-emerald-900/50',
-      accent: 'bg-emerald-500',
+      color: 'text-teal-600 dark:text-teal-400',
+      bg: 'bg-teal-50 dark:bg-teal-950/30',
+      border: 'border-teal-100 dark:border-teal-900/50',
+      accent: 'bg-teal-500',
       icon: CheckCircle,
     },
   ];

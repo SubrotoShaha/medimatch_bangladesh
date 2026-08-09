@@ -143,10 +143,10 @@ export default function DoctorDetailPage() {
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">Consultation Fee</p>
                 <p className="text-2xl font-extrabold text-blue-600 dark:text-blue-400">৳{doctor.consultationFee}</p>
               </div>
-              <div className="bg-emerald-50 dark:bg-emerald-950/30 rounded-2xl p-5 text-center border border-emerald-100 dark:border-emerald-900/50">
-                <Award className="w-6 h-6 text-emerald-600 dark:text-emerald-400 mx-auto mb-2" />
+              <div className="bg-teal-50 dark:bg-teal-950/30 rounded-2xl p-5 text-center border border-teal-100 dark:border-teal-900/50">
+                <Award className="w-6 h-6 text-teal-700 dark:text-teal-400 mx-auto mb-2" />
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">BMDC Number</p>
-                <p className="text-base font-bold text-emerald-600 dark:text-emerald-400 font-mono">{doctor.bmdcNumber}</p>
+                <p className="text-base font-bold text-teal-700 dark:text-teal-400 font-mono">{doctor.bmdcNumber}</p>
               </div>
               <div className="bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl p-5 text-center border border-indigo-100 dark:border-indigo-900/50">
                 <Calendar className="w-6 h-6 text-indigo-600 dark:text-indigo-400 mx-auto mb-2" />
