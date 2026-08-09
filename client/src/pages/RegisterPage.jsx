@@ -6,14 +6,14 @@ import RegisterForm from '../components/auth/RegisterForm';
  */
 export default function RegisterPage() {
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-12 px-4 bg-section-alt relative overflow-hidden">
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-12 px-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-200 relative overflow-hidden">
       {/* Decorative blobs */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-teal-100/70 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/60 rounded-full -translate-x-1/2 translate-y-1/2 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-teal-100/70 dark:bg-teal-900/20 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/60 dark:bg-blue-900/20 rounded-full -translate-x-1/2 translate-y-1/2 blur-3xl pointer-events-none" />
 
       <div className="relative w-full max-w-md animate-fade-in z-10">
         {/* Card */}
-        <div className="bg-white rounded-2xl shadow-premium border border-slate-100 overflow-hidden">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-premium border border-slate-100 dark:border-slate-800 overflow-hidden">
           {/* Branded header */}
           <div className="relative bg-gradient-to-br from-teal-600 via-teal-700 to-blue-700 px-8 py-10 text-center overflow-hidden">
             <div className="absolute inset-0 opacity-10"

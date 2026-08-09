@@ -95,24 +95,26 @@ export default function StatsSection() {
   };
 
   return (
-    <section ref={sectionRef} className="py-28 bg-section-alt relative overflow-hidden">
+    <section ref={sectionRef} className="py-28 bg-gradient-to-b from-slate-50 via-blue-50/40 to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 relative overflow-hidden transition-colors duration-200">
       {/* Decorative blobs */}
-      <div className="absolute top-0 left-0 w-80 h-80 bg-blue-100/50 dark:bg-blue-900/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-100/40 dark:bg-emerald-900/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200/40 dark:bg-blue-900/20 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-200/40 dark:bg-teal-900/20 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="section-label mx-auto dark:!bg-blue-950/40 dark:!text-blue-300 dark:!border-blue-800/60">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800/80 mb-5 shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400" />
             Growing Every Day
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-slate-100 mb-5 leading-tight tracking-tight">
             Numbers that speak{' '}
-            <span className="text-gradient">for themselves</span>
+            <span className="bg-gradient-to-r from-blue-600 to-teal-600 dark:from-blue-400 dark:to-teal-300 bg-clip-text text-transparent">
+              for themselves
+            </span>
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-300 text-lg max-w-xl mx-auto leading-relaxed font-medium">
             MediMatch Bangladesh is growing fast — and so is the quality of
             care our patients receive every day.
           </p>
