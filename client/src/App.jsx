@@ -8,6 +8,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/ui/ProtectedRoute';
 
@@ -23,13 +24,14 @@ import AdminDashboard from './pages/AdminDashboard';
 
 /**
  * Main App Component
- * Wraps the application with AuthProvider, Router, and Layout
+ * Wraps the application with ThemeProvider, AuthProvider, Router, and Layout
  * Defines all routes with role-based protection
  */
 export default function App() {
   return (
-    <AuthProvider>
-      <Router>
+    <ThemeProvider>
+      <AuthProvider>
+        <Router>
         {/* Toast Notifications */}
         <Toaster
           position="top-right"
@@ -103,5 +105,6 @@ export default function App() {
         </Layout>
       </Router>
     </AuthProvider>
+  </ThemeProvider>
   );
 }
