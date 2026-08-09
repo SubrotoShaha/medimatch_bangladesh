@@ -172,6 +172,91 @@ html.dark {
       radial-gradient(ellipse at 55% 88%, rgba(99, 102, 241, 0.1)  0%, transparent 50%);
   }
 
+  /* ── Buttons ── */
+  .btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    padding: 0.72rem 1.6rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.015em;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  .btn-secondary {
+    background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%) !important;
+    color: #ffffff !important;
+    padding: 0.72rem 1.6rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(13, 148, 136, 0.28);
+  }
+
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, #0f766e 0%, #115e59 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(13, 148, 136, 0.38);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: #2563eb;
+    padding: 0.72rem 1.6rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+    border: 1.5px solid rgba(37, 99, 235, 0.35);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .btn-outline:hover {
+    background: rgba(37, 99, 235, 0.06);
+    border-color: #2563eb;
+    transform: translateY(-1px);
+  }
+
   /* ─────────────── Dark Mode Overrides ─────────────────────── */
 
   html.dark .card {

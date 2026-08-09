@@ -116,18 +116,18 @@ export default function SymptomInput({ onSearch, initialQuery = '' }) {
   return (
     <div className="w-full max-w-3xl mx-auto" ref={wrapperRef}>
       {/* Input Container */}
-      <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors duration-200">
         {/* Selected Symptoms (Tags) */}
         <div className="flex flex-wrap gap-2 p-4 pb-2 min-h-[56px]">
           {selectedSymptoms.map((symptom) => (
             <span
               key={symptom}
-              className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-200 animate-fade-in"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 rounded-xl text-sm font-semibold border border-blue-200 dark:border-blue-800/80 animate-fade-in"
             >
               {symptom}
               <button
                 onClick={() => removeSymptom(symptom)}
-                className="ml-0.5 text-blue-400 hover:text-blue-600 transition-colors"
+                className="ml-0.5 text-blue-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors cursor-pointer"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
@@ -144,31 +144,31 @@ export default function SymptomInput({ onSearch, initialQuery = '' }) {
               onKeyDown={handleKeyDown}
               onFocus={() => inputValue.trim() && setShowSuggestions(true)}
               placeholder={selectedSymptoms.length === 0 ? 'Type a symptom (e.g., fever, headache, skin rash)...' : 'Add another symptom...'}
-              className="w-full py-2 px-1 text-sm text-slate-700 placeholder:text-slate-400 outline-none bg-transparent"
+              className="w-full py-2 px-1 text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 outline-none bg-transparent font-medium"
               id="symptom-input"
             />
           </div>
         </div>
 
         {/* Action Bar */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0 px-4 py-3.5 bg-slate-50 border-t border-slate-100">
-          <span className="text-xs text-slate-400 text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0 px-5 py-3.5 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800/80">
+          <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 text-center sm:text-left">
             {selectedSymptoms.length} symptom{selectedSymptoms.length !== 1 ? 's' : ''} selected
           </span>
           <button
             onClick={handleSearch}
             disabled={selectedSymptoms.length === 0 || loading}
-            className="btn-primary w-full sm:w-auto text-sm justify-center disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none"
+            className="btn-primary px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 justify-center cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none min-w-[190px]"
           >
             {loading ? (
-              <span className="flex items-center gap-2 justify-center">
+              <span className="flex items-center gap-2 justify-center text-white">
                 <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 Analyzing...
               </span>
             ) : (
               <>
-                <Sparkles className="w-4 h-4" />
-                Get Recommendations
+                <Sparkles className="w-4 h-4 text-white shrink-0" />
+                <span className="text-white font-bold">Get Recommendations</span>
               </>
             )}
           </button>
@@ -177,14 +177,14 @@ export default function SymptomInput({ onSearch, initialQuery = '' }) {
 
       {/* Autocomplete Suggestions */}
       {showSuggestions && suggestions.length > 0 && (
-        <div className="mt-2 bg-white rounded-xl shadow-lg border border-slate-200 py-2 animate-slide-down max-h-60 overflow-auto">
+        <div className="mt-2 bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-slate-200 dark:border-slate-800 py-2 animate-slide-down max-h-60 overflow-auto z-50">
           {suggestions.map((symptom) => (
             <button
               key={symptom}
               onClick={() => addSymptom(symptom)}
-              className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors text-left"
+              className="w-full flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-left"
             >
-              <Plus className="w-4 h-4 text-slate-400" />
+              <Plus className="w-4 h-4 text-slate-400 dark:text-slate-500" />
               <span className="capitalize">{symptom}</span>
             </button>
           ))}
