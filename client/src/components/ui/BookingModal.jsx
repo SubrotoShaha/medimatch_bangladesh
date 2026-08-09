@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Calendar, Clock } from 'lucide-react';
 import api from '../../api/axios';
 import toast from 'react-hot-toast';
@@ -71,16 +72,16 @@ export default function BookingModal({ doctor, isOpen, onClose, onBooked }) {
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+  return createPortal(
+    <div className="fixed inset-0 z-50 overflow-y-auto flex justify-center items-start p-4 sm:p-6">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+        className="fixed inset-0 bg-black/50 backdrop-blur-sm"
         onClick={onClose}
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg animate-slide-up overflow-y-auto max-h-[calc(100vh-2rem)] flex flex-col">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg animate-slide-up overflow-hidden my-auto z-10">
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-teal-500 px-6 py-4">
           <div className="flex items-center justify-between">
@@ -184,10 +185,18 @@ export default function BookingModal({ doctor, isOpen, onClose, onBooked }) {
             disabled={loading}
             className="w-full btn-primary justify-center py-3 text-base disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? 'Booking...' : 'Confirm Appointment'}
+            {loading ? (
+              <span className="flex items-center gap-2">
+                <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                Booking...
+              </span>
+            ) : (
+              'Confirm Appointment'
+            )}
           </button>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
