@@ -24,6 +24,18 @@ export default function BookingModal({ doctor, isOpen, onClose, onBooked }) {
     }
   }, [isOpen]);
 
+  // Lock background body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   if (!isOpen || !doctor) return null;
 
   const doctorName = doctor.userId?.name || 'Doctor';
@@ -68,7 +80,7 @@ export default function BookingModal({ doctor, isOpen, onClose, onBooked }) {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg animate-slide-up overflow-hidden">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg animate-slide-up overflow-y-auto max-h-[calc(100vh-2rem)] flex flex-col">
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-teal-500 px-6 py-4">
           <div className="flex items-center justify-between">
