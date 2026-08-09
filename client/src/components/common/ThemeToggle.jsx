@@ -28,7 +28,7 @@ export default function ThemeToggle({ compact = false }) {
     { id: 'system', label: 'System', icon: Monitor },
   ];
 
-  const currentOption = options.find((opt) => opt.id === theme) || options[2];
+  const currentOption = options.find((opt) => opt.id === theme) || options[0];
   const CurrentIcon = currentOption.icon;
 
   if (compact) {

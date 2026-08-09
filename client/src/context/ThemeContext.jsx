@@ -10,7 +10,7 @@ const STORAGE_KEY = 'medimatchbd_theme';
  */
 export function ThemeProvider({ children }) {
   const [theme, setThemeState] = useState(() => {
-    return localStorage.getItem(STORAGE_KEY) || 'system';
+    return localStorage.getItem(STORAGE_KEY) || 'light';
   });
 
   const getSystemTheme = () =>
